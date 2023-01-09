@@ -1,8 +1,7 @@
 # Homework Assignment 5 - Task Manager
 
-Author: Shuang Lin
-
-Email: shl224@lehigh.edu
+- Author: Shuang Lin
+- Email: shuanglin3359@gmail.com
 
 ### CSE 264 – Web Systems Programming
 
