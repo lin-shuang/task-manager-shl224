@@ -1,0 +1,61 @@
+/*
+Author: Shuang Lin
+Email: shl224@lehigh.edu
+*/
+
+html{
+    margin: auto;
+    display:grid;
+}
+h1{
+    color: #BF659F;
+    text-align: center;
+}
+body{
+    background-color: #E1C3E6;
+}
+#taskForm{
+    font-size: larger;
+    text-align: inherit;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid white;
+    background-color: #BF659F;
+    border-radius: 1rem; 
+    color: aliceblue;
+}
+#taskTable{
+    font-size: larger;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid white;
+    background-color: #BF659F;
+    border-radius: 1rem; 
+    color: aliceblue;
+}
+#cell{
+    padding: 10px;
+}
+#header{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 15px;
+    color: black;
+}
+#footer{
+    font-size: medium;
+    text-align: center;
+}

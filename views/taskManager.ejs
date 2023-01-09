@@ -1,0 +1,66 @@
+<!--
+Author: Shuang Lin
+Email: shl224@lehigh.edu
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/public/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/public/ajax.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id="header">Task Manager</h1>
+    </div>
+
+    <div>
+        <form id="taskForm">
+            <div>
+                Description: <input id="desc_input" type="text" name="desc">
+            </div>
+            <div>
+                Type: <select id="type_select" name="type" onchange="checkTarget(this.value)">
+                    <option>--Select--</option>
+                    <option>Next Action</option> 
+                    <option>Waiting</option>
+                    <option>Talk</option>
+                    <option>Future</option>
+                    <option>Someday/Maybe</option>
+                </select>
+            </div>
+            <div id="targetToggle">
+                Target: <input id="target_input" type="text" name="target">
+            </div>
+            <div>
+                Date: <input id="date_input" type="date" name="date">
+            </div>
+            <div>
+                <input id="addButton" type="button" value="Add">
+                <input id="delButton" type="button" value="Delete">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <table id="taskTable">
+            <tbody>
+                <tr>
+                    <th></th> <th>Description</th> <th>Type</th> <th>Due Date</th>
+                </tr>
+            </tbody>
+            <tbody id="table_body"></tbody>
+        </table>
+    </div>
+
+    <p id="footer">Copyright © 2022 Shuang Lin</p>
+</body>
+</html>
